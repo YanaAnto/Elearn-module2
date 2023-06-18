@@ -1,0 +1,11 @@
+{
+  "user" : {
+    "name" : "name",
+    "surname" : "surname",
+    "birthday" : "2000-02-20",
+    "address" : {
+      "country" : "country",
+      "city" : "city"
+    }
+  }
+}

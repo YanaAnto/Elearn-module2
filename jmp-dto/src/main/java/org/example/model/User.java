@@ -7,11 +7,16 @@ public class User {
     private String name;
     private String surname;
     private LocalDate birthday;
+    private Address address;
 
-    public User(String name, String surname, LocalDate birthday) {
+    public User(String name, String surname, LocalDate birthday, Address address) {
         this.name = name;
         this.surname = surname;
         this.birthday = birthday;
+        this.address = address;
+    }
+
+    public User() {
     }
 
     public String getName() {
@@ -36,5 +41,13 @@ public class User {
 
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

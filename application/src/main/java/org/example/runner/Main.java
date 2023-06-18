@@ -15,9 +15,9 @@ import org.example.serviceImpl.ServiceImpl;
 public class Main {
 
     public static void main(String[] args) {
-        User user1 = new User("Andrei", "Ivanov", LocalDate.of(2000, 1, 12));
-        User user2 = new User("Slava", "A", LocalDate.of(1986, 10, 6));
-        User user3 = new User("Michail", "S", LocalDate.of(1950, 12, 2));
+        User user1 = new User("Andrei", "Ivanov", LocalDate.of(2000, 1, 12), null);
+        User user2 = new User("Slava", "A", LocalDate.of(1986, 10, 6), null);
+        User user3 = new User("Michail", "S", LocalDate.of(1950, 12, 2), null);
 
         BankCard creditBankCard = new BankFactory().createBankCard(user1, BankCardType.CREDIT);
         InterfaceCreditBankCard creditBankCard1 = CreditBankCard::new;
